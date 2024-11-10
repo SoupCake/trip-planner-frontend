@@ -17,3 +17,7 @@ a:hover {
 .nav-link {
   margin-right: 40px;
 }
+
+.nav-btn {
+  padding: 0 20px;
+}

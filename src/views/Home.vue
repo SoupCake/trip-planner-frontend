@@ -1,6 +1,8 @@
 <template>
-  <v-container>
+  <div>
     <h1>Hello World</h1>
+  </div>
+  <div>
     <v-btn color="primary">Click me</v-btn>
-  </v-container>
+  </div>
 </template>

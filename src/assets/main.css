@@ -2,13 +2,18 @@
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  color: #72cae2;
+  transition: 0.2s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a:hover {
+  font-weight: 700;
+}
+
+.container-base {
+  padding: 0px 350px;
+}
+
+.nav-link {
+  margin-right: 40px;
 }

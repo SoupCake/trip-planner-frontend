@@ -10,7 +10,7 @@
                 v-model="password"
                 label="Password"
             ></v-text-field>
-            <v-btn color="primary" type="submit">Submit</v-btn>
+            <Button title="Login" color="success" type="submit" />
         </v-form>
     </v-sheet>
     <div>
@@ -20,3 +20,12 @@
         <RouterLink to="/register">Don't have an account? Register now!</RouterLink>
     </div>
 </template>
+
+<script>
+import Button from '@/components/Button.vue';
+export default {
+    components: {
+        Button
+    }
+}
+</script>

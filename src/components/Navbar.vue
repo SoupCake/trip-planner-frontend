@@ -7,10 +7,11 @@
             </v-col>
             <v-col cols="4" class="text-right">
                 <RouterLink to="/login" class="nav-link">
-                    <v-btn class="nav-btn">Login</v-btn>
+                    <Button title="Login" class="nav-btn" />
                 </RouterLink>
                 <RouterLink to="/register">
-                    <v-btn class="nav-btn">Register</v-btn>
+                    <!-- <v-btn class="nav-btn">Register</v-btn> -->
+                    <Button title="Register" class="nav-btn" />
                 </RouterLink>
             </v-col>
         </v-row>
@@ -20,3 +21,12 @@
         </v-container>
     </div>
 </template>
+
+<script>
+import Button from './Button.vue';
+export default {
+    components: {
+        Button
+    }
+}
+</script>

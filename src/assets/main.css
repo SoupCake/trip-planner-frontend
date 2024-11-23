@@ -21,3 +21,8 @@ a:hover {
 .nav-btn {
   padding: 0 20px;
 }
+
+.trip-planner-country-flag {
+  height: unset !important;
+  margin: 0 auto;
+}

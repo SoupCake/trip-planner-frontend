@@ -4,6 +4,7 @@
             <v-col cols="8">
                 <RouterLink to="/" class="nav-link">Home</RouterLink>
                 <RouterLink to="/about" class="nav-link">About</RouterLink>
+                <RouterLink to="/my-trip-planner" class="nav-link">My Trips</RouterLink>
             </v-col>
             <v-col cols="4" class="text-right">
                 <RouterLink to="/login" class="nav-link">

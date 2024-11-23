@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import AboutView from '../views/About.vue'
 import Login from '@/views/Login.vue'
 import Register from '@/views/Register.vue'
+import TripPlanner from '@/views/TripPlanner.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/register',
       name: 'register',
       component: Register
+    },
+    {
+      path: '/my-trip-planner',
+      name: 'my-trip-planner',
+      component: TripPlanner
     }
   ]
 })

@@ -1,5 +1,5 @@
 <template>
-    <h1 class="mb-5">My Dashboard</h1>
+    <h1 v-once class="mb-5">My Dashboard</h1>
 
     <v-row class="d-flex align-center">
         <v-col cols="1" class="pr-0">
@@ -14,12 +14,13 @@
                 class="search-bar-section"
             >
                 <v-text-field
+                    v-memo="[inputText]"
                     class="search-bar-icon"
                     prepend-icon="mdi-magnify"
                     hide-details
                     single-line
                     placeholder="Search..."
-                ></v-text-field>
+                >{{ inputText }}</v-text-field>
             </v-toolbar>
         </v-col>
     </v-row>
@@ -54,6 +55,7 @@ export default {
             //     { title: "Australia" }
             // ],
             trip_lists: [],
+            inputText: "",
         }
     }
 }

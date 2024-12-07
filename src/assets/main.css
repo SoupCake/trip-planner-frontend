@@ -26,3 +26,77 @@ a:hover {
   height: unset !important;
   margin: 0 auto;
 }
+
+/* Responsive */
+/* mobile screen*/
+@media (max-width: 576px){
+  /* Base layout */
+  .container-base {
+      padding: 0px 50px;
+  }
+
+  /* Login page */
+  .login-page, .register-page {
+      padding: 0px 100px;
+  }
+}
+
+/* small screen*/
+@media (min-width: 576px){
+  /* Base layout */
+  .container-base {
+      padding: 0px 50px;
+  }
+
+  /* Login page */
+  .login-page, .register-page {
+      padding: 0px 100px;
+  }
+}
+
+/* medium screen*/
+@media (min-width: 768px){
+  /* Base layout */
+  .container-base {
+      padding: 0px 50px;
+  }
+
+  /* Login page */
+  .login-page, .register-page {
+      padding: 0px 50px;
+  }
+}
+
+/* large screen*/
+@media (min-width: 992px){
+  /* Base layout */
+  .container-base {
+    padding: 0px 120px;
+  }
+
+  /* Login page */
+  .login-page, .register-page {
+      padding: 0px 100px;
+  }
+}
+
+/* extra large screen*/
+@media (min-width: 1200px){
+  /* Base layout */
+  .container-base {
+    padding: 0px 200px;
+  }
+
+  /* Login page */
+  .login-page, .register-page {
+      padding: 0px 100px;
+  }
+}
+
+/* extra extra large screen*/
+@media (min-width: 1400px){
+  /* Login page */
+  .login-page, .register-page {
+      padding: 0px 150px;
+  }
+}

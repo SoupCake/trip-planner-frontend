@@ -11,35 +11,35 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: Home
     },
     {
       path: '/about',
-      name: 'about',
+      name: 'About',
       component: AboutView
     },
     {
       path: '/login',
-      name: 'login',
+      name: 'Login',
       component: Login
     },
     {
       path: '/register',
-      name: 'register',
+      name: 'Register',
       component: Register
     },
     {
       path: '/dashboard',
-      name: 'dashboard',
+      name: 'Dashboard',
       component: Dashboard
     },
     {
       path: '/my-trip-planner',
-      name: 'my-trip-planner',
+      name: 'My Trip Planner',
       component: TripPlanner
     }
   ]
 })
 
-export default router
+export default router;

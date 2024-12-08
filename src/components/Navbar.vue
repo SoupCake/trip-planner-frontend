@@ -14,9 +14,7 @@
                 </span>
             </v-col>
             <v-col cols="2" v-else>
-                <div>
-                    <v-app-bar-nav-icon></v-app-bar-nav-icon>
-                </div>
+                <v-app-bar-nav-icon @click="menuOpen = !menuOpen"></v-app-bar-nav-icon>
             </v-col>
             <v-col :cols="$vuetify.display.mdAndUp ? '4' : '10'" class="text-right">
                 <RouterLink to="/login" class="nav-link">
@@ -41,6 +39,21 @@
                 </span> -->
             </v-col>
         </v-row>
+        <v-layout>
+            <v-navigation-drawer
+                v-model="menuOpen"
+                temporary
+                class="pa-5"
+            >
+                <RouterLink
+                    v-for="(link, i) in nav_links"
+                    :key="i"
+                    :to="link.path"
+                >
+                    <div class="mb-3">{{ link.name }}</div>
+                </RouterLink>
+            </v-navigation-drawer>
+        </v-layout>
         <v-divider></v-divider>
         <v-container class="px-0">
             <RouterView />
@@ -50,14 +63,29 @@
 
 <script>
 import Button from './BaseButton.vue';
+import { useRouter } from 'vue-router';
+
 export default {
     components: {
         Button
     },
     data() {
         return {
-            "userToken": true
+            "userToken": true,
+            menuOpen: false,
+            nav_links: [],
         }
+    },
+    created() {
+        this.getNavLinks();
+    },
+    methods: {
+        getNavLinks() {
+            const router = useRouter();
+            this.nav_links = router.getRoutes().filter(
+                router => router.name != "Login" && router.name != "Register"
+            )
+        },
     }
 }
 </script>

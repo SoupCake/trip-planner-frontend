@@ -24,7 +24,7 @@ export default {
         return {
             country: {
                 name: "Malaysia",
-                flag: "../../public/images/flags/malaysia.png",
+                flag: "/images/flags/malaysia.png",
                 start_date: "9/10/2025",
                 end_date: "15/10/2025",
                 status: 0,

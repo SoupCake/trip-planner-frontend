@@ -1,4 +1,11 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Poiret+One&display=swap');
+* {
+  font-family: "Andika", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a,
 .green {
   text-decoration: none;
@@ -20,6 +27,34 @@ a:hover {
 
 .nav-btn {
   padding: 0 20px;
+}
+
+.main-title {
+  font-size: 60px;
+}
+
+.main-subtitle {
+  font-size: 24px;
+}
+
+.trip-image-1 {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.trip-image-2 {
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, 15px); }
+  100% { transform: translate(0, -0px); }
 }
 
 .trip-planner-country-flag {

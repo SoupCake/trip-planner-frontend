@@ -1,6 +1,7 @@
 <template>
     <v-btn>
-        {{ title }}
+        <slot name="icon"></slot>
+        <slot name="baseBtn">{{ title }}</slot>
     </v-btn>
 </template>
 

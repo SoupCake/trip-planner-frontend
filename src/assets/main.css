@@ -37,26 +37,6 @@ a:hover {
   font-size: 24px;
 }
 
-.trip-image-1 {
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-.trip-image-2 {
-  animation-name: floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-  0% { transform: translate(0, 0px); }
-  50% { transform: translate(0, 15px); }
-  100% { transform: translate(0, -0px); }
-}
-
 .trip-planner-country-flag {
   height: unset !important;
   margin: 0 auto;
@@ -109,6 +89,27 @@ a:hover {
     padding: 0px 120px;
   }
 
+  /* Homepage */
+  .trip-image-1 {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .trip-image-2 {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }
+  }
+
   /* Login page */
   .login-page, .register-page {
       padding: 0px 100px;
@@ -122,6 +123,27 @@ a:hover {
     padding: 0px 200px;
   }
 
+  /* Homepage */
+  .trip-image-1 {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .trip-image-2 {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }
+  }
+
   /* Login page */
   .login-page, .register-page {
       padding: 0px 100px;
@@ -130,6 +152,27 @@ a:hover {
 
 /* extra extra large screen*/
 @media (min-width: 1400px){
+  /* Homepage */
+  .trip-image-1 {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .trip-image-2 {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }
+  }
+
   /* Login page */
   .login-page, .register-page {
       padding: 0px 150px;

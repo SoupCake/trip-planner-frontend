@@ -1,16 +1,16 @@
 <template>
-  <div class="section-1 py-10">
+  <div class="section-1 my-10">
     <h1 class="main-title">Crafting Journeys That Inspire</h1>
     <p class="main-subtitle">Plan, organize and set your goal with ease</p>
   </div>
 
-  <v-row class="py-10">
-    <v-col cols="6">
+  <v-row class="my-10">
+    <v-col sm="6" cols="12">
       <v-img src="/images/homepage/van.webp" rounded class="trip-image-1"></v-img>
     </v-col>
-    <v-col cols="6"></v-col>
-    <v-col cols="6"></v-col>
-    <v-col cols="6">
+    <v-col cols="6" v-if="$vuetify.display.smAndUp"></v-col>
+    <v-col cols="6" v-if="$vuetify.display.smAndUp"></v-col>
+    <v-col sm="6" cols="12">
       <v-img src="/images/homepage/plan.webp" rounded class="trip-image-2"></v-img>
     </v-col>
   </v-row>
@@ -52,6 +52,29 @@
         </template>
       </v-timeline-item>
     </v-timeline>
+  </div>
+
+  <div id="about" class="my-10 text-center">
+    <h1 class="main-title">About</h1>
+    <v-row class="my-10">
+      <v-col sm="6" cols="12" class="about-image">
+        <v-img src="/images/homepage/van.webp" rounded width="500"></v-img>
+      </v-col>
+      <v-col sm="6" cols="12" class="about-image">
+        <v-img src="/images/homepage/plan.webp" rounded width="500"></v-img>
+      </v-col>
+    </v-row>
+
+    <p class="mb-5">
+      Planning a trip can be overwhelming, but we make it simple and enjoyable.
+      Our platform is designed to help you organize your travel plans effortlessly.
+    </p>
+    <p class="mb-5">
+      With tools to create detailed itineraries, manage activities, and track your goals, we ensure you never miss a moment.
+      Whether it's a weekend getaway or a dream vacation, we're here to keep you on track and inspired every step of the way.
+      Start your journey with us today!
+    </p>
+
   </div>
 </template>
 

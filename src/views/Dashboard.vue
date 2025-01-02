@@ -3,7 +3,7 @@
 
     <v-row class="d-flex align-center">
         <v-col cols="1" class="pr-0">
-            <RouterLink to="/my-trip-planner">
+            <RouterLink to="/trip-planner/create">
                 <v-btn color="success">+ Create</v-btn>
             </RouterLink>
         </v-col>
@@ -37,7 +37,7 @@
     </div>
     <div v-else class="text-center mt-15">
         <h1 class="mb-5">Your list is empty</h1>
-        <RouterLink to="/my-trip-planner">
+        <RouterLink to="/trip-planner/create">
             <v-btn color="success">Create your first trip now!</v-btn>
         </RouterLink>
     </div>

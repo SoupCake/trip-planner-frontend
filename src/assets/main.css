@@ -42,6 +42,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.about-image {
+  justify-items: center;
+}
+
 /* Responsive */
 /* mobile screen*/
 @media (max-width: 576px){
